@@ -1,0 +1,44 @@
+{
+    "textures": {
+        "particle": "tbouncepad:blocks/bounce_pad_bottom",
+        "top": "tbouncepad:blocks/bounce_pad_top",
+        "bottom": "tbouncepad:blocks/bounce_pad_bottom",
+        "point": "tbouncepad:blocks/bounce_pad_point"
+    },
+    "elements": [
+        {
+            "from": [ 0, 0, 0 ], 
+            "to": [ 16, 8, 16 ], 
+            "faces": {
+                "north": { "texture": "#bottom", "uv": [ 0, 8, 16, 16 ] },
+                "east": { "texture": "#bottom", "uv": [ 0, 8, 16, 16 ] },
+                "south": { "texture": "#bottom", "uv": [ 0, 8, 16, 16 ] },
+                "west": { "texture": "#bottom", "uv": [ 0, 8, 16, 16 ] },
+                "up": { "texture": "#bottom", "uv": [ 0, 0, 16, 16 ] },
+                "down": { "texture": "#bottom", "uv": [ 0, 0, 16, 16 ] }
+            }
+        },
+        {
+            "from": [ 2, 1, 2 ], 
+            "to": [ 14, 10, 14 ], 
+            "faces": {
+                "north": { "texture": "#top", "uv": [ 2, 6, 14, 15 ] },
+                "east": { "texture": "#top", "uv": [ 2, 6, 14, 15 ] },
+                "south": { "texture": "#top", "uv": [ 2, 6, 14, 15 ] },
+                "west": { "texture": "#top", "uv": [ 2, 6, 14, 15 ] },
+                "up": { "texture": "#top", "uv": [ 2, 2, 14, 14 ] }
+            }
+        },
+        {
+            "from": [ 1, 8, 1 ], 
+            "to": [ 5, 11, 5 ], 
+            "faces": {
+                "north": { "texture": "#point", "uv": [ 4, 7, 8, 10 ] },
+                "east": { "texture": "#point", "uv": [ 0, 7, 4, 10 ] },
+                "south": { "texture": "#point", "uv": [ 12, 7, 16, 10 ] },
+                "west": { "texture": "#point", "uv": [ 8, 7, 12, 10 ] },
+                "up": { "texture": "#point", "uv": [ 4, 3, 8, 7 ], "rotation": 180 }
+            }
+        }
+    ]
+}
