@@ -1,44 +1,32 @@
-modLoader="javafml" #mandatory
-
-loaderVersion="[34,)" #mandatory
-
+modLoader="javafml"
+loaderVersion="[36,)"
 license="All rights reserved"
+#issueTrackerURL="https://change.me.to.your.issue.tracker.example.invalid/"
 
-issueTrackerURL="http://my.issue.tracker/" #optional
-
-[[mods]] #mandatory
-
-modId="tbouncepad" #mandatory
-
-version="1.3" #mandatory
-
-displayName="Tinkers' Bounce Pad" #mandatory
-
-updateJSONURL="http://myurl.me/" #optional
-
-displayURL="https://www.curseforge.com/minecraft/mc-mods/tinkers-bounce-pad" #optional
-
-logoFile="pack.png" #optional
-
-credits="Me the mod author, thanks to kazmurenko for the Russian Translation" #optional
-
-authors="MincraftEinstein" #optional
-
-description='''
-Adds The Bounce Pad Form TConstruct 1.7.10 into newer versions.
+[[mods]]
+	modId="tbouncepad"
+	version="1.3"
+	displayName="Tinkers' Bounce Pad"
+	#updateJSONURL="https://change.me.example.invalid/updates.json"
+	displayURL="https://www.curseforge.com/minecraft/mc-mods/tinkers-bounce-pad"
+	logoFile="pack.png"
+	credits="Me the mod author, thanks to kazmurenko for the Russian Translation"
+	authors="MincraftEinstein"
+	description='''
+Adds The Bounce Pad form TConstruct 1.7.10 into newer versions.
 '''
 
-[[dependencies.tbouncepad]] #optional
-    modId="forge" #mandatory
-    mandatory=true #mandatory
-    versionRange="[34,)" #mandatory
+[[dependencies.tbouncepad]]
+    modId="forge"
+    mandatory=true
+    versionRange="[36,)"
     ordering="NONE"
     side="BOTH"
 
 [[dependencies.tbouncepad]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.16.4]"
+    versionRange="[1.16.5,1.17)"
     ordering="NONE"
     side="BOTH"
 
