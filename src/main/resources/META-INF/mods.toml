@@ -13,7 +13,7 @@ license="All rights reserved"
 	credits="Me the mod author, thanks to kazmurenko for the Russian Translation"
 	authors="MincraftEinstein"
 	description='''
-Adds The Bounce Pad form TConstruct 1.7.10 into newer versions.
+Adds The Bounce Pad from TConstruct 1.7.10 into newer versions.
 '''
 
 [[dependencies.tbouncepad]]
