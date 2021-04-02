@@ -1,0 +1,12 @@
+{
+    "variants": {
+        "direction=0": { "model": "tbouncepad:block/enderslime_bounce_pad" },
+        "direction=1": { "model": "tbouncepad:block/enderslime_bounce_pad_corner" },
+        "direction=2": { "model": "tbouncepad:block/enderslime_bounce_pad", "y": 90 },
+        "direction=3": { "model": "tbouncepad:block/enderslime_bounce_pad_corner", "y": 90 },
+        "direction=4": { "model": "tbouncepad:block/enderslime_bounce_pad", "y": 180 },
+        "direction=5": { "model": "tbouncepad:block/enderslime_bounce_pad_corner", "y": 180 },
+        "direction=6": { "model": "tbouncepad:block/enderslime_bounce_pad", "y": 270 },
+        "direction=7": { "model": "tbouncepad:block/enderslime_bounce_pad_corner", "y": 270 }
+    }
+}

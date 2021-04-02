@@ -23,7 +23,7 @@ public class BouncePad extends Block {
 	public static final IntegerProperty DIRECTION = IntegerProperty.create("direction", 0, 7);
 	protected static final VoxelShape BOTTOM = Block.makeCuboidShape(0, 0, 0, 16, 8, 16);
     protected static final VoxelShape TOP = Block.makeCuboidShape(2, 8, 2, 14, 10, 14);
-	protected static final VoxelShape[] POINTS = new VoxelShape[] {
+	protected static final VoxelShape[] SHAPES = new VoxelShape[] {
 		VoxelShapes.or(BOTTOM, TOP, Block.makeCuboidShape(10, 8, 1, 6, 11, 5)), // North
 		VoxelShapes.or(BOTTOM, TOP, Block.makeCuboidShape(11, 8, 1, 15, 11, 5)), // North-east
 		VoxelShapes.or(BOTTOM, TOP, Block.makeCuboidShape(11, 8, 6, 15, 11, 10)), // East
@@ -40,7 +40,7 @@ public class BouncePad extends Block {
 	}
 
 	public VoxelShape getShape(final BlockState state, final IBlockReader worldIn, final BlockPos pos, final ISelectionContext context) {
-		return POINTS[state.get(DIRECTION)];
+		return SHAPES[state.get(DIRECTION)];
 	}
 
 	public VoxelShape getCollisionShape(final BlockState state, final IBlockReader worldIn, final BlockPos pos, final ISelectionContext context) {
@@ -111,14 +111,14 @@ public class BouncePad extends Block {
 				}
 			}
 			entityIn.addVelocity(moveX, 0.5F, moveZ);
+			if (ModInit.BOUNCE_SOUND.get()) {
+				worldIn.playSound(pos.getX() + 0.5F, pos.getY() + 0.5F, pos.getZ() + 0.5F, soundType.getStepSound(), SoundCategory.BLOCKS, soundType.getVolume() / 2.0F, soundType.getPitch() * 0.65F, false);	
+			}
 		}
 		if (entityIn instanceof ItemEntity) {
 			++entityIn.lastTickPosY;
 			entityIn.addVelocity(moveX, 0.5F, moveZ);
 		}
 		entityIn.fallDistance = 0.0F;
-		if (ModInit.BOUNCE_SOUND.get()) {
-			worldIn.playSound(pos.getX() + 0.5F, pos.getY() + 0.5F, pos.getZ() + 0.5F, soundType.getStepSound(), SoundCategory.BLOCKS, soundType.getVolume() / 2.0F, soundType.getPitch() * 0.65F, false);	
-		}
 	}
 }

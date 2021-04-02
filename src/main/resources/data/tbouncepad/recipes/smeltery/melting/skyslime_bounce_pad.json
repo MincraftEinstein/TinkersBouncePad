@@ -1,0 +1,18 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "tconstruct"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "tbouncepad:skyslime_bounce_pad"
+	},
+	"result": {
+		"fluid": "tconstruct:sky_slime",
+		"amount": 2500
+	},
+	"temperature": 50,
+	"time": 46
+}

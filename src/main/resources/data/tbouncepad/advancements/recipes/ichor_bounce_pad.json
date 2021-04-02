@@ -1,0 +1,38 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "tconstruct"
+		}
+	],
+	"parent": "minecraft:recipes/root",
+	"rewards": {
+		"recipes": [
+			"tbouncepad:ichor_bounce_pad"
+		]
+	},
+	"criteria": {
+		"has_slime": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "tconstruct:ichor_slime_ball"
+					}
+				]
+			}
+		},
+		"has_the_recipe": {
+			"trigger": "minecraft:recipe_unlocked",
+			"conditions": {
+				"recipe": "tbouncepad:ichor_bounce_pad"
+			}
+		}
+	},
+	"requirements": [
+		[
+			"has_slime",
+			"has_the_recipe"
+		]
+	]
+}

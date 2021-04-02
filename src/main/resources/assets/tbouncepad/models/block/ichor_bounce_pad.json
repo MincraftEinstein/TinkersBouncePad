@@ -2,10 +2,10 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"particle": "#bottom",
-		"point": "tbouncepad:blocks/bounce_pad_point_corner",
-		"top": "minecraft:block/slime_block",
-		"side": "tbouncepad:blocks/bounce_pad_side",
-		"bottom": "tbouncepad:blocks/bounce_pad_bottom"
+		"point": "tbouncepad:blocks/ichor_bounce_pad_point",
+		"top": "tconstruct:block/slime/ichor_slime",
+		"side": "tbouncepad:blocks/ichor_bounce_pad_side",
+		"bottom": "tbouncepad:blocks/ichor_bounce_pad_bottom"
 	},
 	"elements": [
 		{
@@ -38,16 +38,16 @@
 		},
 		{
 			"name": "point",
-			"from": [11, 8, 1],
-			"to": [15, 11, 5],
+			"from": [6, 8, 1],
+			"to": [10, 11, 5],
 			"rotation": {"angle": 0, "axis": "y", "origin": [0, 0, 0]},
 			"faces": {
-				"north": {"uv": [8, 7, 12, 10], "texture": "#point"},
-				"east": {"uv": [4, 7, 8, 10], "texture": "#point"},
-				"south": {"uv": [0, 7, 4, 10], "texture": "#point"},
-				"west": {"uv": [12, 7, 16, 10], "texture": "#point"},
-				"up": {"uv": [4, 3, 8, 7], "rotation": 270, "texture": "#point"},
-				"down": {"uv": [8, 3, 12, 7], "rotation": 270, "texture": "#point"}
+				"north": {"uv": [4, 7, 8, 10], "texture": "#point"},
+				"east": {"uv": [0, 7, 4, 10], "texture": "#point"},
+				"south": {"uv": [12, 7, 16, 10], "texture": "#point"},
+				"west": {"uv": [8, 7, 12, 10], "texture": "#point"},
+				"up": {"uv": [4, 3, 8, 7], "rotation": 180, "texture": "#point"},
+				"down": {"uv": [8, 3, 12, 7], "texture": "#point"}
 			}
 		}
 	]

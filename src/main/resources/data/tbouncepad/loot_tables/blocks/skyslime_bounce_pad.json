@@ -6,7 +6,7 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "tbouncepad:bounce_pad"
+					"name": "tbouncepad:skyslime_bounce_pad"
 				}
 			],
 			"conditions": [

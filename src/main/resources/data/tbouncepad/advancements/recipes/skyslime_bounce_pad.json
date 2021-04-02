@@ -1,0 +1,38 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "tconstruct"
+		}
+	],
+	"parent": "minecraft:recipes/root",
+	"rewards": {
+		"recipes": [
+			"tbouncepad:skyslime_bounce_pad"
+		]
+	},
+	"criteria": {
+		"has_slime": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "tconstruct:sky_slime_ball"
+					}
+				]
+			}
+		},
+		"has_the_recipe": {
+			"trigger": "minecraft:recipe_unlocked",
+			"conditions": {
+				"recipe": "tbouncepad:skyslime_bounce_pad"
+			}
+		}
+	},
+	"requirements": [
+		[
+			"has_slime",
+			"has_the_recipe"
+		]
+	]
+}
