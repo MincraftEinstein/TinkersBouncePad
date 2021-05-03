@@ -29,9 +29,9 @@ public class TinkersBouncePad
     public static class ModInit
     {
         public static final Block BOUNCE_PAD = RegistryHandler.registerBlock(TinkersBouncePad.MODID, "bounce_pad", new BouncePad(Block.Properties.create(Material.CLAY, MaterialColor.GRASS).hardnessAndResistance(0.3F).harvestTool(ToolType.SHOVEL).sound(SoundType.SLIME).setAllowsSpawn(Blocks::neverAllowSpawn)), ItemGroup.TRANSPORTATION);
-        public static final Block SKYSLIME_BOUNCE_PAD = RegistryHandler.registerModCompatBlock(TinkersBouncePad.MODID, TinkersBouncePad.TCON_MODID, "skyslime_bounce_pad", new BouncePad(Block.Properties.from(ModInit.BOUNCE_PAD)), ItemGroup.TRANSPORTATION);
-        public static final Block ENDERSLIME_BOUNCE_PAD = RegistryHandler.registerModCompatBlock(TinkersBouncePad.MODID, TinkersBouncePad.TCON_MODID, "enderslime_bounce_pad", new BouncePad(Block.Properties.from(ModInit.BOUNCE_PAD)), ItemGroup.TRANSPORTATION);
-        public static final Block ICHOR_BOUNCE_PAD = RegistryHandler.registerModCompatBlock(TinkersBouncePad.MODID, TinkersBouncePad.TCON_MODID, "ichor_bounce_pad", new BouncePad(Block.Properties.from(ModInit.BOUNCE_PAD)), ItemGroup.TRANSPORTATION);
+        public static final Block SKYSLIME_BOUNCE_PAD = RegistryHandler.registerBlock(TinkersBouncePad.MODID, TinkersBouncePad.TCON_MODID, "skyslime_bounce_pad", new BouncePad(Block.Properties.from(ModInit.BOUNCE_PAD)), ItemGroup.TRANSPORTATION);
+        public static final Block ENDERSLIME_BOUNCE_PAD = RegistryHandler.registerBlock(TinkersBouncePad.MODID, TinkersBouncePad.TCON_MODID, "enderslime_bounce_pad", new BouncePad(Block.Properties.from(ModInit.BOUNCE_PAD)), ItemGroup.TRANSPORTATION);
+        public static final Block ICHOR_BOUNCE_PAD = RegistryHandler.registerBlock(TinkersBouncePad.MODID, TinkersBouncePad.TCON_MODID, "ichor_bounce_pad", new BouncePad(Block.Properties.from(ModInit.BOUNCE_PAD)), ItemGroup.TRANSPORTATION);
         
         public static ForgeConfigSpec.Builder CLIENT_BUILDER = new ForgeConfigSpec.Builder();
         public static final ForgeConfigSpec.BooleanValue BOUNCE_SOUND = CLIENT_BUILDER.comment("If true then a slime sound will be played when an entity bounces on the bounce pad").define("bounceSound", true);

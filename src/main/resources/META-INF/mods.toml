@@ -34,6 +34,6 @@ Adds the Bounce Pad from TConstruct 1.7.10 into newer versions.
 [[dependencies.tbouncepad]]
     modId="einsteins_library"
     mandatory=true
-    versionRange="[1.0,)"
+    versionRange="[2.0,)"
     ordering="AFTER"
     side="BOTH"

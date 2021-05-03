@@ -118,7 +118,7 @@ dependencies {
     // http://www.gradle.org/docs/current/userguide/dependency_management.html
 
 	// Library
-	implementation fg.deobf("curse.maven:einsteins-library:3171021")
+	implementation fg.deobf("curse.maven:einsteins-library:3296428")
     implementation fg.deobf("curse.maven:mantle:3273201")
     implementation fg.deobf("curse.maven:tinkers-construct:3281505")
 	implementation fg.deobf("curse.maven:jei:3245079")
