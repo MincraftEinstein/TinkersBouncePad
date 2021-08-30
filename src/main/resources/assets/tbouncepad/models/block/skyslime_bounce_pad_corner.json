@@ -3,7 +3,7 @@
 	"textures": {
 		"particle": "#bottom",
 		"point": "tbouncepad:blocks/skyslime_bounce_pad_point_corner",
-		"top": "tconstruct:block/slime/sky_slime",
+		"top": "tconstruct:block/slime/storage/sky",
 		"side": "tbouncepad:blocks/skyslime_bounce_pad_side",
 		"bottom": "tbouncepad:blocks/skyslime_bounce_pad_bottom"
 	},

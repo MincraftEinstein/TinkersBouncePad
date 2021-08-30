@@ -1,33 +1,35 @@
 modLoader="javafml"
-loaderVersion="[34,)"
+loaderVersion="[37,)"
 license="All rights reserved"
 #issueTrackerURL="https://change.me.to.your.issue.tracker.example.invalid/"
 
 [[mods]]
 	modId="tbouncepad"
-	version="2.0"
+	version="2.1"
 	displayName="Tinkers' Bounce Pad"
 	#updateJSONURL="https://change.me.example.invalid/updates.json"
 	displayURL="https://www.curseforge.com/minecraft/mc-mods/tinkers-bounce-pad"
 	logoFile="pack.png"
 	credits="Me the mod author, thanks to kazmurenko for the Russian Translation"
 	authors="MincraftEinstein"
-	itemIcon="tbouncepad:bounce_pad" #Used by Catalogue
 	description='''
 Adds the Bounce Pad from TConstruct 1.7.10 into newer versions.
 '''
 
+[modproperties.tbouncepad]
+    catalogueImageIcon="pack.png"
+
 [[dependencies.tbouncepad]]
     modId="forge"
     mandatory=true
-    versionRange="[34,)"
+    versionRange="[37,)"
     ordering="NONE"
     side="BOTH"
 
 [[dependencies.tbouncepad]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.16.3, 1.17)"
+    versionRange="[1.17.1, 1.18)"
     ordering="NONE"
     side="BOTH"
 
