@@ -12,15 +12,21 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Mirror;
 import net.minecraft.world.level.block.Rotation;
+import net.minecraft.world.level.block.SimpleWaterloggedBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition.Builder;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
+import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
+import net.minecraft.world.level.material.FluidState;
+import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
-public class BouncePad extends Block {
+public class BouncePad extends Block implements SimpleWaterloggedBlock {
 	public static final IntegerProperty DIRECTION = IntegerProperty.create("direction", 0, 7);
+	public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
 	protected static final VoxelShape BOTTOM = Block.box(0, 0, 0, 16, 8, 16);
     protected static final VoxelShape TOP = Block.box(2, 8, 2, 14, 10, 14);
 	protected static final VoxelShape[] SHAPES = new VoxelShape[] {
@@ -36,7 +42,7 @@ public class BouncePad extends Block {
 	
 	public BouncePad(final Block.Properties properties) {
 		super(properties);
-		this.registerDefaultState(this.stateDefinition.any().setValue(DIRECTION, Integer.valueOf(0)));
+		this.registerDefaultState(this.stateDefinition.any().setValue(DIRECTION, Integer.valueOf(0)).setValue(WATERLOGGED, Boolean.valueOf(false)));
 	}
 	
 	public VoxelShape getShape(BlockState state, BlockGetter getter, BlockPos pos, CollisionContext context) {
@@ -48,11 +54,16 @@ public class BouncePad extends Block {
 	}
 	
 	public BlockState getStateForPlacement(BlockPlaceContext context) {
-		return this.defaultBlockState().setValue(DIRECTION, Integer.valueOf(Mth.floor(((180.0F + context.getRotation()) * 8.0F / 360.0F) + 0.5D) & 7));
+		return this.defaultBlockState().setValue(DIRECTION, Integer.valueOf(Mth.floor(((180 + context.getRotation()) * 8 / 360) + 0.5F) & 7));
+	}
+	
+	@SuppressWarnings("deprecation")
+	public FluidState getFluidState(BlockState p_56131_) {
+		return p_56131_.getValue(WATERLOGGED) ? Fluids.WATER.getSource(false) : super.getFluidState(p_56131_);
 	}
 	
 	protected void createBlockStateDefinition(Builder<Block, BlockState> builder) {
-		builder.add(DIRECTION);
+		builder.add(DIRECTION, WATERLOGGED);
 	}
 	
 	public BlockState rotate(BlockState state, Rotation rotation) {
@@ -64,8 +75,8 @@ public class BouncePad extends Block {
 	}
 	
 	public void entityInside(BlockState state, Level level, BlockPos pos, Entity entity) {
-		double moveX = 0.0F;
-		double moveZ = 0.0F;
+		double moveX = 0;
+		double moveZ = 0;
 		double speed = 0.25F;
 		if (!entity.isCrouching()) {
 			switch (state.getValue(DIRECTION)) {
