@@ -84,7 +84,7 @@ repositories {
 dependencies {
     minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
 
-    implementation fg.deobf("curse.maven:einsteins-library-405744:3545865")
+    //implementation fg.deobf("curse.maven:einsteins-library-405744:3545865")
 }
 
 jar {
