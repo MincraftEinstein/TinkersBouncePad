@@ -3,7 +3,7 @@
 	"textures": {
 		"particle": "#bottom",
 		"point": "tbouncepad:blocks/ichor_bounce_pad_point_corner",
-		"top": "tconstruct:block/slime/storage/ichor",
+		"top": "tbouncepad:blocks/ichor_bounce_pad_top",
 		"side": "tbouncepad:blocks/ichor_bounce_pad_side",
 		"bottom": "tbouncepad:blocks/ichor_bounce_pad_bottom"
 	},
