@@ -1,38 +1,46 @@
 {
-	"conditions": [
+	"advancements": [
 		{
-			"type": "forge:mod_loaded",
-			"modid": "tconstruct"
-		}
-	],
-	"parent": "minecraft:recipes/root",
-	"rewards": {
-		"recipes": [
-			"tbouncepad:enderslime_bounce_pad"
-		]
-	},
-	"criteria": {
-		"has_slime": {
-			"trigger": "minecraft:inventory_changed",
-			"conditions": {
-				"items": [
-					{
-						"item": "tconstruct:ender_slime_ball"
+			"conditions": [
+				{
+					"type": "forge:mod_loaded",
+					"modid": "tconstruct"
+				}
+			],
+			"advancement": {
+				"parent": "minecraft:recipes/root",
+				"rewards": {
+					"recipes": [
+						"tbouncepad:enderslime_bounce_pad"
+					]
+				},
+				"criteria": {
+					"has_slime": {
+						"trigger": "minecraft:inventory_changed",
+						"conditions": {
+							"items": [
+								{
+									"items": [
+										"tconstruct:ender_slime_ball"
+									]
+								}
+							]
+						}
+					},
+					"has_the_recipe": {
+						"trigger": "minecraft:recipe_unlocked",
+						"conditions": {
+							"recipe": "tbouncepad:enderslime_bounce_pad"
+						}
 					}
+				},
+				"requirements": [
+					[
+						"has_slime",
+						"has_the_recipe"
+					]
 				]
 			}
-		},
-		"has_the_recipe": {
-			"trigger": "minecraft:recipe_unlocked",
-			"conditions": {
-				"recipe": "tbouncepad:enderslime_bounce_pad"
-			}
 		}
-	},
-	"requirements": [
-		[
-			"has_slime",
-			"has_the_recipe"
-		]
 	]
 }
