@@ -2,7 +2,6 @@
 # Tinkers Bounce Pad
 
 [![Mod Loader](https://img.shields.io/badge/Mod%20Loader-Forge-green?style=for-the-badge "Forge Download")](https://files.minecraftforge.net)
-[![Repository](https://img.shields.io/badge/GitHub-Repository-blueviolet?style=for-the-badge&logo=github "Github Repository")](https://www.github.com/MincraftEinstein/TinkersBouncePad)
 [![Curseforge Page](https://img.shields.io/badge/Curseforge-Page-orange?style=for-the-badge&logo=curseforge "Curseforge page")](https://www.curseforge.com/minecraft/mc-mods/tinkers-bounce-pad)
 [![Modrinth](https://img.shields.io/badge/Modrinth-Page-1bd96a?style=for-the-badge "Modrinth page")](https://www.modrinth.com/mods/tinkers-bounce-pad)
 
