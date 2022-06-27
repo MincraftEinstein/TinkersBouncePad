@@ -26,16 +26,6 @@ Russian translation by [kazmurenko](https://www.curseforge.com/members/kazmurenk
 </details>
 <br>
 
-<!--Curseforge Readme-->
-**📜 PLEASE READ**
-
-- You may use this mod in modpacks
-- You may translate this mod into any language (Just make a pull request on github)
-- You may make resource/data packs
-
-- You may **NOT** publish/reupload this mod in any form (edited or not) on another site without asking first
-- You may **NOT** sell this mod or it's source code in any form
-
 ---
 
 **Note**: Tinkers Construct is not required
