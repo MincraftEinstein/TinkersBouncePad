@@ -1,19 +1,41 @@
 
+# Tinkers Bounce Pad
 
-## Tinkers' Bounce Pad
-![](https://img.shields.io/badge/Mod%20Loader-Forge-orange)
-![](https://img.shields.io/badge/Minecraft%20Versions-1.15.2%20%7C%201.16.4%20%7C%201.16.5-green)
-</br>
-📜 License: All Rights Reserved </br>
-💻 [Website](https://mincrafteinstein.wix.com/mincrafteinstein) </br>
-🧱 Requirements:
-- [Einstein's Library](https://curseforge.com/minecraft/mc-mods/einsteins-library)(Required)
+[![Mod Loader](https://img.shields.io/badge/Mod%20Loader-Forge-green?style=for-the-badge "Forge Download")](https://files.minecraftforge.net)
+[![Repository](https://img.shields.io/badge/GitHub-Repository-blueviolet?style=for-the-badge&logo=github "Github Repository")](https://www.github.com/MincraftEinstein/TinkersBouncePad)
+[![Curseforge Page](https://img.shields.io/badge/Curseforge-Page-orange?style=for-the-badge&logo=curseforge "Curseforge page")](https://www.curseforge.com/minecraft/mc-mods/tinkers-bounce-pad)
+[![Modrinth](https://img.shields.io/badge/Modrinth-Page-1bd96a?style=for-the-badge "Modrinth page")](https://www.modrinth.com/mods/tinkers-bounce-pad)
+
+### **📘 Description**
+This mod adds an updated version of the Bounce Pad from [Tinkers' Construct](https://curseforge.com/minecraft/mc-mods/tinkers-construct) 1.6.4
+
+Russian translation by [kazmurenko](https://www.curseforge.com/members/kazmurenko/followers)
+
+<!--Default Readme-->
+<br>
+<details>
+<summary><b>📜 PLEASE READ</b></summary>
+<ul>
+<li>You may use this mod in modpacks</li>
+<li>You may translate this mod into any language (Just make a pull request on github)</li>
+<li>You may make resource/data packs</li>
+<hr>
+<li>You may <b>NOT</b> publish/reupload this mod in any form (edited or not) on another site without asking first</li>
+<li>You may <b>NOT</b> sell this mod or it's source code in any form</li>
+</ul>
+</details>
+<br>
+
+<!--Curseforge Readme-->
+**📜 PLEASE READ**
+
+- You may use this mod in modpacks
+- You may translate this mod into any language (Just make a pull request on github)
+- You may make resource/data packs
+
+- You may **NOT** publish/reupload this mod in any form (edited or not) on another site without asking first
+- You may **NOT** sell this mod or it's source code in any form
+
 ---
--   You may use my mod in modpacks
--   You may make resource packs for my mod
-(you don’t have to ask, but I would like you to tell me)
--   You may **NOT** fork/edit my mod for anything other than personal use
--   You may **NOT** republish/reupload my mod
--   AND HAVE FUN!!
----
-Adds The Tinkers' Construct 1.7.10 bounce pad into newer versions. The model is very similar to the original, but the textures are not.
+
+**Note**: Tinkers Construct is not required
