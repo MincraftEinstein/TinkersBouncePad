@@ -1,6 +1,5 @@
 package einstein.tbouncepad;
 
-import einstein.tbouncepad.TinkersBouncePad.ModInit;
 import net.minecraft.core.BlockPos;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.util.Mth;
