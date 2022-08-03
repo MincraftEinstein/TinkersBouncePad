@@ -10,7 +10,8 @@ This mod adds an updated version of the Bounce Pad from [Tinkers' Construct](htt
 
 Russian translation by [kazmurenko](https://www.curseforge.com/members/kazmurenko/followers)
 
-<!--Default Readme-->
+Repository created from [MultiLoader-Template](https://github.com/jaredlll08/MultiLoader-Template/tree/1.19)
+
 <br>
 <details>
 <summary><b>📜 PLEASE READ</b></summary>

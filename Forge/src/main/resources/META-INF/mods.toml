@@ -1,0 +1,34 @@
+modLoader="javafml"
+loaderVersion="[41,)"
+license="All rights reserved"
+issueTrackerURL="https://github.com/MincraftEinstein/TinkersBouncePad/issues"
+
+[[mods]]
+    modId="tbouncepad"
+    version="${version}"
+    displayName="Tinkers' Bounce Pad"
+    #updateJSONURL="https://change.me.example.invalid/updates.json"
+    displayURL="https://www.curseforge.com/minecraft/mc-mods/tinkers-bounce-pad"
+    logoFile="pack.png"
+    credits="Me the mod author, thanks to kazmurenko for the Russian Translation"
+    authors="MincraftEinstein"
+    description='''
+This mod adds an updated version of the Bounce Pad from Tinkers' Construct 1.6.4
+'''
+
+[modproperties.tbouncepad]
+    catalogueImageIcon="pack.png"
+
+[[dependencies.tbouncepad]]
+    modId="forge"
+    mandatory=true
+    versionRange="[41,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.tbouncepad]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.19, 1.20)"
+    ordering="NONE"
+    side="BOTH"

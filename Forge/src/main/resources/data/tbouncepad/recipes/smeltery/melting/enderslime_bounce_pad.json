@@ -1,0 +1,19 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "tconstruct"
+		}
+	],
+	"type": "tconstruct:melting",
+	"group": "bounce_pad",
+	"ingredient": {
+		"item": "tbouncepad:enderslime_bounce_pad"
+	},
+	"result": {
+		"fluid": "tconstruct:ender_slime",
+		"amount": 2500
+	},
+	"temperature": 70,
+	"time": 127
+}

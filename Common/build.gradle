@@ -1,0 +1,50 @@
+plugins {
+    id 'java'
+    id 'org.spongepowered.gradle.vanilla' version '0.2.1-SNAPSHOT'
+    id 'maven-publish'
+}
+
+version = "${mod_v}"
+group = "${mod_group}"
+archivesBaseName = "${mod_name}-common-${mc_v}"
+
+minecraft {
+    version("${mc_v}")
+    runs {   
+        if (project.hasProperty('common_runs_enabled') ? project.findProperty('common_runs_enabled').toBoolean() : true) {
+            server(project.hasProperty('common_server_run_name') ? project.findProperty('common_server_run_name') : 'vanilla_server') {
+                workingDirectory(this.file("run"))
+            }
+
+            client(project.hasProperty('common_client_run_name') ? project.findProperty('common_client_run_name') : 'vanilla_client') {
+                workingDirectory(this.file("run"))
+            }
+        }
+    }
+}
+
+dependencies {
+     compileOnly group:'org.spongepowered', name:'mixin', version:'0.8.5'
+     implementation group: 'com.google.code.findbugs', name: 'jsr305', version: '3.0.1'
+
+    compileOnly group: 'com.electronwill.night-config', name: 'core', version: '3.6.3'
+    compileOnly group: 'com.electronwill.night-config', name: 'toml', version: '3.6.3'
+    compileOnly group: 'net.minecraftforge', name: 'forgeconfigapiport-fabric', version: '4.1.3'
+}
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            groupId project.group
+            artifactId project.archivesBaseName
+            version project.version
+            from components.java
+        }
+    }
+
+    repositories {
+        maven {
+            url "file://" + System.getenv("local_maven")
+        }
+    }
+}
