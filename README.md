@@ -1,9 +1,12 @@
 
 # Tinkers Bounce Pad
 
-[![Mod Loader](https://img.shields.io/badge/Mod%20Loader-Forge-green?style=for-the-badge "Forge Download")](https://files.minecraftforge.net)
-[![Curseforge Page](https://img.shields.io/badge/Curseforge-Page-orange?style=for-the-badge&logo=curseforge "Curseforge page")](https://www.curseforge.com/minecraft/mc-mods/tinkers-bounce-pad)
-[![Modrinth](https://img.shields.io/badge/Modrinth-Page-1bd96a?style=for-the-badge "Modrinth page")](https://www.modrinth.com/mods/tinkers-bounce-pad)
+[![Forge Mod Loader](https://img.shields.io/badge/Mod%20Loader-Forge-green?style=for-the-badge "Forge Download")](https://files.minecraftforge.net)
+[![Fabric Mod Loader](https://img.shields.io/badge/Mod%20Loader-Fabric-green?style=for-the-badge "Fabric Download")](https://fabricmc.net/)
+[![Curseforge Forge Page](https://img.shields.io/badge/Curseforge%20Page-Forge-orange?style=for-the-badge&logo=curseforge "Curseforge Forge page")](https://www.curseforge.com/minecraft/mc-mods/mendable-anvils-forge)
+[![Curseforge Fabric Page](https://img.shields.io/badge/Curseforge%20Page-Fabric-orange?style=for-the-badge&logo=curseforge "Curseforge Fabric page")](https://www.curseforge.com/minecraft/mc-mods/mendable-anvils-fabric)
+[![Modrinth Forge Page](https://img.shields.io/badge/Modrinth%20Page-Forge-1bd96a?style=for-the-badge "Modrinth Forge page")](https://modrinth.com/mod/mendable-anvils-forge)
+[![Modrinth Fabric Page](https://img.shields.io/badge/Modrinth%20Page-Fabric-1bd96a?style=for-the-badge "Modrinth Fabric page")](https://modrinth.com/mod/mendable-anvils-fabric)
 
 ### **📘 Description**
 This mod adds an updated version of the Bounce Pad from [Tinkers' Construct](https://curseforge.com/minecraft/mc-mods/tinkers-construct) 1.6.4
@@ -11,6 +14,8 @@ This mod adds an updated version of the Bounce Pad from [Tinkers' Construct](htt
 Russian translation by [kazmurenko](https://www.curseforge.com/members/kazmurenko/followers)
 
 Repository created from [MultiLoader-Template](https://github.com/jaredlll08/MultiLoader-Template/tree/1.19)
+
+[Fabric API](https://modrinth.com/mod/fabric-api "Fabric API") required
 
 <br>
 <details>
