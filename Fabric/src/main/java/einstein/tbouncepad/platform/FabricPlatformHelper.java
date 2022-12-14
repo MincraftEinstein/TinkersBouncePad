@@ -1,22 +1,24 @@
-package einstein.tbouncepad.loader;
+package einstein.tbouncepad.platform;
 
-import einstein.tbouncepad.loader.services.LoaderHelper;
+import einstein.tbouncepad.platform.services.IPlatformHelper;
 import net.fabricmc.loader.api.FabricLoader;
 
-public class FabricLoaderHelper implements LoaderHelper {
+public class FabricPlatformHelper implements IPlatformHelper {
 
     @Override
-    public ModLoaderType getModLoader() {
-        return ModLoaderType.FABRIC;
+    public String getPlatformName() {
+        return "Fabric";
     }
 
     @Override
     public boolean isModLoaded(String modId) {
+
         return FabricLoader.getInstance().isModLoaded(modId);
     }
 
     @Override
     public boolean isDevelopmentEnvironment() {
+
         return FabricLoader.getInstance().isDevelopmentEnvironment();
     }
 }

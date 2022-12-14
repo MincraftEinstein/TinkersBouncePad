@@ -1,23 +1,26 @@
-package einstein.tbouncepad.loader;
+package einstein.tbouncepad.platform;
 
-import einstein.tbouncepad.loader.services.LoaderHelper;
+import einstein.tbouncepad.platform.services.IPlatformHelper;
 import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.loading.FMLLoader;
 
-public class ForgeLoaderHelper implements LoaderHelper {
+public class ForgePlatformHelper implements IPlatformHelper {
 
     @Override
-    public ModLoaderType getModLoader() {
-        return ModLoaderType.FORGE;
+    public String getPlatformName() {
+
+        return "Forge";
     }
 
     @Override
     public boolean isModLoaded(String modId) {
+
         return ModList.get().isLoaded(modId);
     }
 
     @Override
     public boolean isDevelopmentEnvironment() {
+
         return !FMLLoader.isProduction();
     }
 }

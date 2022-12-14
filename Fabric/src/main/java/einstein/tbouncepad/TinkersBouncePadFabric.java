@@ -1,6 +1,6 @@
 package einstein.tbouncepad;
 
-import einstein.tbouncepad.loader.Services;
+import einstein.tbouncepad.platform.Services;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -18,7 +18,7 @@ public class TinkersBouncePadFabric implements ModInitializer {
         ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.FUNCTIONAL_BLOCKS).register(entries -> {
             entries.accept(ModInit.BOUNCE_PAD);
 
-            if (Services.LOADER.isModLoaded(TinkersBouncePad.TCON_MOD_ID)) {
+            if (Services.PLATFORM.isModLoaded(TinkersBouncePad.TCON_MOD_ID)) {
                 entries.accept(ModInit.SKYSLIME_BOUNCE_PAD);
                 entries.accept(ModInit.ENDERSLIME_BOUNCE_PAD);
                 entries.accept(ModInit.ICHOR_BOUNCE_PAD);
