@@ -2,10 +2,10 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"particle": "#bottom",
-		"point": "tbouncepad:blocks/enderslime_bounce_pad_point",
-		"top": "tbouncepad:blocks/enderslime_bounce_pad_top",
-		"side": "tbouncepad:blocks/enderslime_bounce_pad_side",
-		"bottom": "tbouncepad:blocks/enderslime_bounce_pad_bottom"
+		"point": "tbouncepad:block/enderslime_bounce_pad_point",
+		"top": "tbouncepad:block/enderslime_bounce_pad_top",
+		"side": "tbouncepad:block/enderslime_bounce_pad_side",
+		"bottom": "tbouncepad:block/enderslime_bounce_pad_bottom"
 	},
 	"elements": [
 		{

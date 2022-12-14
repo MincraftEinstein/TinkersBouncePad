@@ -2,10 +2,10 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"particle": "#bottom",
-		"point": "tbouncepad:blocks/bounce_pad_point",
+		"point": "tbouncepad:block/bounce_pad_point",
 		"top": "minecraft:block/slime_block",
-		"side": "tbouncepad:blocks/bounce_pad_side",
-		"bottom": "tbouncepad:blocks/bounce_pad_bottom"
+		"side": "tbouncepad:block/bounce_pad_side",
+		"bottom": "tbouncepad:block/bounce_pad_bottom"
 	},
 	"elements": [
 		{

@@ -1,16 +1,9 @@
 package einstein.tbouncepad;
 
+import einstein.tbouncepad.loader.Services;
 import net.fabricmc.api.ModInitializer;
-import net.minecraft.core.Registry;
-import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.SoundType;
-import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.material.Material;
-import net.minecraft.world.level.material.MaterialColor;
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.ModLoadingContext;
 import net.minecraftforge.fml.config.ModConfig;
 
@@ -21,5 +14,15 @@ public class TinkersBouncePadFabric implements ModInitializer {
         TinkersBouncePad.init();
         ModInit.register();
         ModLoadingContext.registerConfig(TinkersBouncePad.MOD_ID, ModConfig.Type.CLIENT, TinkersBouncePad.buildConfigs());
+
+        ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.FUNCTIONAL_BLOCKS).register(entries -> {
+            entries.accept(ModInit.BOUNCE_PAD);
+
+            if (Services.LOADER.isModLoaded(TinkersBouncePad.TCON_MOD_ID)) {
+                entries.accept(ModInit.SKYSLIME_BOUNCE_PAD);
+                entries.accept(ModInit.ENDERSLIME_BOUNCE_PAD);
+                entries.accept(ModInit.ICHOR_BOUNCE_PAD);
+            }
+        });
     }
 }

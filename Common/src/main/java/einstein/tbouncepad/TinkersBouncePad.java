@@ -13,8 +13,7 @@ public class TinkersBouncePad {
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_NAME);
     public static ForgeConfigSpec.BooleanValue BOUNCE_SOUND;
 
-    public static void init() {
-    }
+    public static void init() {}
 
     public static ForgeConfigSpec buildConfigs() {
         ForgeConfigSpec.Builder builder = new ForgeConfigSpec.Builder();
