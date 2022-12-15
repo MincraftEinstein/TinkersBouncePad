@@ -1,5 +1,6 @@
 package einstein.tbouncepad;
 
+import einstein.tbouncepad.platform.ForgeRegistryHelper;
 import einstein.tbouncepad.platform.Services;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.event.CreativeModeTabEvent;
@@ -15,8 +16,8 @@ public class TinkersBouncePadForge {
     public TinkersBouncePadForge() {
         final IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         TinkersBouncePad.init();
-        ModInit.ITEMS.register(modEventBus);
-        ModInit.BLOCKS.register(modEventBus);
+        ForgeRegistryHelper.ITEMS.register(modEventBus);
+        ForgeRegistryHelper.BLOCKS.register(modEventBus);
         modEventBus.addListener(this::onBuildContents);
         ModLoadingContext.get().registerConfig(ModConfig.Type.CLIENT, TinkersBouncePad.buildConfigs());
     }

@@ -12,16 +12,15 @@ public class TinkersBouncePadFabric implements ModInitializer {
     @Override
     public void onInitialize() {
         TinkersBouncePad.init();
-        ModInit.register();
         ModLoadingContext.registerConfig(TinkersBouncePad.MOD_ID, ModConfig.Type.CLIENT, TinkersBouncePad.buildConfigs());
 
         ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.FUNCTIONAL_BLOCKS).register(entries -> {
-            entries.accept(ModInit.BOUNCE_PAD);
+            entries.accept(ModInit.BOUNCE_PAD.get());
 
             if (Services.PLATFORM.isModLoaded(TinkersBouncePad.TCON_MOD_ID)) {
-                entries.accept(ModInit.SKYSLIME_BOUNCE_PAD);
-                entries.accept(ModInit.ENDERSLIME_BOUNCE_PAD);
-                entries.accept(ModInit.ICHOR_BOUNCE_PAD);
+                entries.accept(ModInit.SKYSLIME_BOUNCE_PAD.get());
+                entries.accept(ModInit.ENDERSLIME_BOUNCE_PAD.get());
+                entries.accept(ModInit.ICHOR_BOUNCE_PAD.get());
             }
         });
     }

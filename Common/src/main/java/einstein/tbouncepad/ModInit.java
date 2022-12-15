@@ -1,0 +1,20 @@
+package einstein.tbouncepad;
+
+import einstein.tbouncepad.platform.Services;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.material.Material;
+import net.minecraft.world.level.material.MaterialColor;
+
+import java.util.function.Supplier;
+
+public class ModInit {
+
+    public static final Supplier<Block> BOUNCE_PAD = Services.REGISTRY.registerBlock("bounce_pad", () -> new BouncePad(BlockBehaviour.Properties.of(Material.CLAY, MaterialColor.GRASS).strength(0.3F).sound(SoundType.SLIME_BLOCK).isValidSpawn((state, getter, pos, entityType) -> false/*Temporary fix*/)));
+    public static final Supplier<Block> SKYSLIME_BOUNCE_PAD = Services.REGISTRY.registerBlock("skyslime_bounce_pad", () -> new BouncePad(BlockBehaviour.Properties.copy(BOUNCE_PAD.get())));
+    public static final Supplier<Block> ENDERSLIME_BOUNCE_PAD = Services.REGISTRY.registerBlock("enderslime_bounce_pad", () -> new BouncePad(BlockBehaviour.Properties.copy(BOUNCE_PAD.get())));
+    public static final Supplier<Block> ICHOR_BOUNCE_PAD = Services.REGISTRY.registerBlock("ichor_bounce_pad", () -> new BouncePad(BlockBehaviour.Properties.copy(BOUNCE_PAD.get())));
+
+    public static void init() {}
+}

@@ -61,7 +61,14 @@ minecraft {
     }
 }
 
-sourceSets.main.resources.srcDir 'src/generated/resources'
+sourceSets {
+    main {
+        resources {
+            srcDir 'src/generated/resources'
+            excludes.add("tbouncepad.accesswidener")
+        }
+    }
+}
 
 dependencies {
     minecraft "net.minecraftforge:forge:${mc_v}-${forge_v}"

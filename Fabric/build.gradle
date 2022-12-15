@@ -22,8 +22,6 @@ dependencies {
 }
 
 loom {
-    accessWidenerPath = file("src/main/resources/tbouncepad.accesswidener")
-
     runs {
         client {
             client()
