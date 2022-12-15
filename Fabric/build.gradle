@@ -4,7 +4,7 @@ plugins {
     id 'idea'
 }
 
-version = "${mod_id}"
+version = "${mod_v}"
 group = "${mod_group}"
 archivesBaseName = "${mod_name}-fabric-${mc_v}"
 
