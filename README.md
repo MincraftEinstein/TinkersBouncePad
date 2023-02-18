@@ -1,8 +1,10 @@
 # Tinkers Bounce Pad
 
 ![](https://img.shields.io/badge/Mod%20Loaders-Forge%20%26%20Fabric-green?style=for-the-badge)
-[![Curseforge Page](https://img.shields.io/badge/Curseforge-Page-orange?style=for-the-badge&logo=curseforge "Curseforge page")](https://www.curseforge.com/minecraft/mc-mods/tinkers-bounce-pad)
-[![Modrinth Page](https://img.shields.io/badge/Modrinth-Page-1bd96a?style=for-the-badge "Modrinth page")](https://modrinth.com/mod/tinkers-bounce-pad)
+[![Curseforge Forge Page](https://img.shields.io/badge/Curseforge%20Page-Forge-orange?style=for-the-badge&logo=curseforge "Curseforge Forge page")](https://www.curseforge.com/minecraft/mc-mods/tinkers-bounce-pad)
+[![Curseforge Fabric Page](https://img.shields.io/badge/Curseforge%20Page-Fabric-orange?style=for-the-badge&logo=curseforge "Curseforge Fabric page")](https://www.curseforge.com/minecraft/mc-mods/tinkers-bounce-pad-fabric)
+[![Modrinth Forge Page](https://img.shields.io/badge/Modrinth%20Page-Forge-1bd96a?style=for-the-badge "Modrinth Forge page")](https://modrinth.com/mod/tinkers-bounce-pad)
+[![Modrinth Fabric Page](https://img.shields.io/badge/Modrinth%20Page-Fabric-1bd96a?style=for-the-badge "Modrinth Fabric page")](https://modrinth.com/mod/tinkers-bounce-pad-fabric)
 [![Discord Invite](https://img.shields.io/badge/Discord-Einsteins%20Lab-blue?style=for-the-badge&logo=discord)](https://discord.gg/gSsaFAvrBM)
 
 ### **📘 Description**
