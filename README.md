@@ -1,21 +1,16 @@
-
 # Tinkers Bounce Pad
 
-[![Forge Mod Loader](https://img.shields.io/badge/Mod%20Loader-Forge-green?style=for-the-badge "Forge Download")](https://files.minecraftforge.net)
-[![Fabric Mod Loader](https://img.shields.io/badge/Mod%20Loader-Fabric-green?style=for-the-badge "Fabric Download")](https://fabricmc.net/)
-[![Curseforge Forge Page](https://img.shields.io/badge/Curseforge%20Page-Forge-orange?style=for-the-badge&logo=curseforge "Curseforge Forge page")](https://www.curseforge.com/minecraft/mc-mods/mendable-anvils-forge)
-[![Curseforge Fabric Page](https://img.shields.io/badge/Curseforge%20Page-Fabric-orange?style=for-the-badge&logo=curseforge "Curseforge Fabric page")](https://www.curseforge.com/minecraft/mc-mods/mendable-anvils-fabric)
-[![Modrinth Forge Page](https://img.shields.io/badge/Modrinth%20Page-Forge-1bd96a?style=for-the-badge "Modrinth Forge page")](https://modrinth.com/mod/mendable-anvils-forge)
-[![Modrinth Fabric Page](https://img.shields.io/badge/Modrinth%20Page-Fabric-1bd96a?style=for-the-badge "Modrinth Fabric page")](https://modrinth.com/mod/mendable-anvils-fabric)
+![](https://img.shields.io/badge/Mod%20Loaders-Forge%20%26%20Fabric-green?style=for-the-badge)
+[![Curseforge Page](https://img.shields.io/badge/Curseforge-Page-orange?style=for-the-badge&logo=curseforge "Curseforge page")](https://www.curseforge.com/minecraft/mc-mods/mendable-anvils-forge)
+[![Modrinth Page](https://img.shields.io/badge/Modrinth-Page-1bd96a?style=for-the-badge "Modrinth page")](https://modrinth.com/mod/mendable-anvils-forge)
+[![Discord Invite](https://img.shields.io/badge/Discord-Einsteins%20Lab-blue?style=for-the-badge&logo=discord)](https://discord.gg/gSsaFAvrBM)
 
 ### **📘 Description**
 This mod adds an updated version of the Bounce Pad from [Tinkers' Construct](https://curseforge.com/minecraft/mc-mods/tinkers-construct) 1.6.4
 
-Russian translation by [kazmurenko](https://www.curseforge.com/members/kazmurenko/followers)
+Tinkers Construct is not required
 
-Repository created from [MultiLoader-Template](https://github.com/jaredlll08/MultiLoader-Template/tree/1.19)
-
-[Fabric API](https://modrinth.com/mod/fabric-api "Fabric API") required
+[Fabric API](https://modrinth.com/mod/fabric-api "Fabric API") required for Fabric version
 
 <br>
 <details>
@@ -31,6 +26,11 @@ Repository created from [MultiLoader-Template](https://github.com/jaredlll08/Mul
 </details>
 <br>
 
+### **💬 Translators**
+Russian: [kazmurenko](https://www.curseforge.com/members/kazmurenko/followers)
+
 ---
 
-**Note**: Tinkers Construct is not required
+[![Kinetic Hosting Banner](https://i.imgur.com/u6Fn0I0.png)](https://billing.kinetichosting.net/aff.php?aff=124)
+
+Repository created from [MultiLoader-Template](https://github.com/jaredlll08/MultiLoader-Template/tree/1.19)
