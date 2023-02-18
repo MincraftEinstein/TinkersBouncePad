@@ -1,8 +1,8 @@
 # Tinkers Bounce Pad
 
 ![](https://img.shields.io/badge/Mod%20Loaders-Forge%20%26%20Fabric-green?style=for-the-badge)
-[![Curseforge Page](https://img.shields.io/badge/Curseforge-Page-orange?style=for-the-badge&logo=curseforge "Curseforge page")](https://www.curseforge.com/minecraft/mc-mods/mendable-anvils-forge)
-[![Modrinth Page](https://img.shields.io/badge/Modrinth-Page-1bd96a?style=for-the-badge "Modrinth page")](https://modrinth.com/mod/mendable-anvils-forge)
+[![Curseforge Page](https://img.shields.io/badge/Curseforge-Page-orange?style=for-the-badge&logo=curseforge "Curseforge page")](https://www.curseforge.com/minecraft/mc-mods/tinkers-bounce-pad)
+[![Modrinth Page](https://img.shields.io/badge/Modrinth-Page-1bd96a?style=for-the-badge "Modrinth page")](https://modrinth.com/mod/tinkers-bounce-pad)
 [![Discord Invite](https://img.shields.io/badge/Discord-Einsteins%20Lab-blue?style=for-the-badge&logo=discord)](https://discord.gg/gSsaFAvrBM)
 
 ### **📘 Description**
@@ -26,11 +26,15 @@ Tinkers Construct is not required
 </details>
 <br>
 
+---
+
 ### **💬 Translators**
 Russian: [kazmurenko](https://www.curseforge.com/members/kazmurenko/followers)
 
 ---
 
 [![Kinetic Hosting Banner](https://i.imgur.com/u6Fn0I0.png)](https://billing.kinetichosting.net/aff.php?aff=124)
+
+---
 
 Repository created from [MultiLoader-Template](https://github.com/jaredlll08/MultiLoader-Template/tree/1.19)
