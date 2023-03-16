@@ -1,5 +1,5 @@
 modLoader="javafml"
-loaderVersion="[44,)"
+loaderVersion="[45,)"
 license="All rights reserved"
 issueTrackerURL="https://github.com/MincraftEinstein/TinkersBouncePad/issues"
 
@@ -22,13 +22,13 @@ This mod adds an updated version of the Bounce Pad from Tinkers' Construct 1.6.4
 [[dependencies.tbouncepad]]
     modId="forge"
     mandatory=true
-    versionRange="[44.0.18,)"
+    versionRange="[45.0.1,)"
     ordering="NONE"
     side="BOTH"
 
 [[dependencies.tbouncepad]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.19.3, 1.20)"
+    versionRange="[1.19.4, 1.20)"
     ordering="NONE"
     side="BOTH"

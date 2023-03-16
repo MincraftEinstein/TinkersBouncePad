@@ -18,7 +18,7 @@ dependencies {
     implementation project(":Common")
 
     modImplementation("curse.maven:modmenu-308702:${modmenu_v}")
-    modImplementation("net.minecraftforge:forgeconfigapiport-fabric:${config_port_v}")
+    modImplementation("fuzs.forgeconfigapiport:forgeconfigapiport-fabric:${config_port_v}")
 }
 
 loom {

@@ -32,7 +32,7 @@ dependencies {
     
     compileOnly group: 'com.electronwill.night-config', name: 'core', version: '3.6.3'
     compileOnly group: 'com.electronwill.night-config', name: 'toml', version: '3.6.3'
-    compileOnly group: 'net.minecraftforge', name: 'forgeconfigapiport-fabric', version: "${config_port_v}"
+    compileOnly group: 'fuzs.forgeconfigapiport', name: 'forgeconfigapiport-fabric', version: "${config_port_v}"
 }
 
 processResources {
