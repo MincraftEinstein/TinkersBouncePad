@@ -3,7 +3,7 @@ package einstein.tbouncepad;
 import einstein.tbouncepad.platform.ForgeRegistryHelper;
 import einstein.tbouncepad.platform.Services;
 import net.minecraft.world.item.CreativeModeTabs;
-import net.minecraftforge.event.CreativeModeTabEvent;
+import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
@@ -22,8 +22,8 @@ public class TinkersBouncePadForge {
         ModLoadingContext.get().registerConfig(ModConfig.Type.CLIENT, TinkersBouncePad.buildConfigs());
     }
 
-    void onBuildContents(CreativeModeTabEvent.BuildContents event) {
-        if (event.getTab() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
+    void onBuildContents(BuildCreativeModeTabContentsEvent event) {
+        if (event.getTabKey().equals(CreativeModeTabs.FUNCTIONAL_BLOCKS)) {
             event.accept(ModInit.BOUNCE_PAD);
 
             if (Services.PLATFORM.isModLoaded(TinkersBouncePad.TCON_MOD_ID)) {
