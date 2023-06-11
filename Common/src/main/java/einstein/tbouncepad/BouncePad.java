@@ -24,12 +24,14 @@ import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import org.jetbrains.annotations.Nullable;
 
+@SuppressWarnings("deprecation")
 public class BouncePad extends Block implements SimpleWaterloggedBlock {
+
     public static final IntegerProperty DIRECTION = IntegerProperty.create("direction", 0, 7);
     public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
     protected static final VoxelShape BOTTOM = Block.box(0, 0, 0, 16, 8, 16);
     protected static final VoxelShape TOP = Block.box(2, 8, 2, 14, 10, 14);
-    protected static final VoxelShape[] SHAPES = new VoxelShape[] {
+    protected static final VoxelShape[] SHAPES = new VoxelShape[]{
             Shapes.or(BOTTOM, TOP, Block.box(6, 8, 1, 10, 11, 5)), // North
             Shapes.or(BOTTOM, TOP, Block.box(11, 8, 1, 15, 11, 5)), // North-east
             Shapes.or(BOTTOM, TOP, Block.box(11, 8, 6, 15, 11, 10)), // East
@@ -88,48 +90,42 @@ public class BouncePad extends Block implements SimpleWaterloggedBlock {
         double speed = 0.25F;
         if (!entity.isCrouching()) {
             switch (state.getValue(DIRECTION)) {
-                default: { // North
+                default -> { // North
                     moveZ -= speed;
-                    break;
                 }
-                case 1: { // North-east
+                case 1 -> { // North-east
                     moveZ -= speed;
                     moveX += speed;
-                    break;
                 }
-                case 2: { // East
+                case 2 -> { // East
                     moveX += speed;
-                    break;
                 }
-                case 3: { // South-east
+                case 3 -> { // South-east
                     moveZ += speed;
                     moveX += speed;
-                    break;
                 }
-                case 4: { // South
+                case 4 -> { // South
                     moveZ += speed;
-                    break;
                 }
-                case 5: { // South-west
+                case 5 -> { // South-west
                     moveZ += speed;
                     moveX -= speed;
-                    break;
                 }
-                case 6: { // West
+                case 6 -> { // West
                     moveX -= speed;
-                    break;
                 }
-                case 7: { // North-west
+                case 7 -> { // North-west
                     moveZ -= speed;
                     moveX -= speed;
-                    break;
                 }
             }
             entity.push(moveX, 0.5F, moveZ);
+
             if (TinkersBouncePad.BOUNCE_SOUND.get()) {
                 level.playLocalSound(pos.getX() + 0.5F, pos.getY() + 0.5F, pos.getZ() + 0.5F, soundType.getStepSound(), SoundSource.BLOCKS, soundType.getVolume() / 2, soundType.getPitch() * 0.65F, false);
             }
         }
+
         if (entity instanceof ItemEntity) {
             ++entity.yOld;
             entity.push(moveX, 0.5F, moveZ);

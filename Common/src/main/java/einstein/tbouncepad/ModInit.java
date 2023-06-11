@@ -15,5 +15,6 @@ public class ModInit {
     public static final Supplier<Block> ENDERSLIME_BOUNCE_PAD = Services.REGISTRY.registerBlock("enderslime_bounce_pad", () -> new BouncePad(BlockBehaviour.Properties.copy(BOUNCE_PAD.get())));
     public static final Supplier<Block> ICHOR_BOUNCE_PAD = Services.REGISTRY.registerBlock("ichor_bounce_pad", () -> new BouncePad(BlockBehaviour.Properties.copy(BOUNCE_PAD.get())));
 
-    public static void init() {}
+    public static void init() {
+    }
 }
