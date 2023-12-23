@@ -1,18 +1,18 @@
 {
-	"replace": false,
-	"values": [
-		"tbouncepad:bounce_pad",
-		{
-			"id": "tbouncepad:skyslime_bounce_pad",
-			"required": false
-		},
-		{
-			"id": "tbouncepad:enderslime_bounce_pad",
-			"required": false
-		},
-		{
-			"id": "tbouncepad:ichor_bounce_pad",
-			"required": false
-		}
-	]
+  "replace": false,
+  "values": [
+    "tbouncepad:bounce_pad",
+    {
+      "id": "tbouncepad:skyslime_bounce_pad",
+      "required": false
+    },
+    {
+      "id": "tbouncepad:enderslime_bounce_pad",
+      "required": false
+    },
+    {
+      "id": "tbouncepad:ichor_bounce_pad",
+      "required": false
+    }
+  ]
 }

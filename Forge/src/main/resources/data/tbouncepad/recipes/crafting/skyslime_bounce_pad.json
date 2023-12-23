@@ -1,26 +1,26 @@
 {
-	"conditions": [
-		{
-			"type": "forge:mod_loaded",
-			"modid": "tconstruct"
-		}
-	],
-	"type": "minecraft:crafting_shaped",
-	"group": "bounce_pad",
-	"pattern": [
-		"s",
-		"b"
-	],
-	"key": {
-		"s": {
-			"item": "tconstruct:sky_slime_ball"
-		},
-		"b": {
-			"item": "tconstruct:sky_slime"
-		}
-	},
-	"result": {
-		"item": "tbouncepad:skyslime_bounce_pad",
-		"count": 3
-	}
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "tconstruct"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "group": "bounce_pad",
+  "pattern": [
+    "s",
+    "b"
+  ],
+  "key": {
+    "s": {
+      "item": "tconstruct:sky_slime_ball"
+    },
+    "b": {
+      "item": "tconstruct:sky_slime"
+    }
+  },
+  "result": {
+    "item": "tbouncepad:skyslime_bounce_pad",
+    "count": 3
+  }
 }
