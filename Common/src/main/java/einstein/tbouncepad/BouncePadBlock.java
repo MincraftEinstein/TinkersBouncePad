@@ -25,13 +25,13 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 import org.jetbrains.annotations.Nullable;
 
 @SuppressWarnings("deprecation")
-public class BouncePad extends Block implements SimpleWaterloggedBlock {
+public class BouncePadBlock extends Block implements SimpleWaterloggedBlock {
 
     public static final IntegerProperty DIRECTION = IntegerProperty.create("direction", 0, 7);
     public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
     protected static final VoxelShape BOTTOM = Block.box(0, 0, 0, 16, 8, 16);
     protected static final VoxelShape TOP = Block.box(2, 8, 2, 14, 10, 14);
-    protected static final VoxelShape[] SHAPES = new VoxelShape[]{
+    protected static final VoxelShape[] SHAPES = new VoxelShape[] {
             Shapes.or(BOTTOM, TOP, Block.box(6, 8, 1, 10, 11, 5)), // North
             Shapes.or(BOTTOM, TOP, Block.box(11, 8, 1, 15, 11, 5)), // North-east
             Shapes.or(BOTTOM, TOP, Block.box(11, 8, 6, 15, 11, 10)), // East
@@ -42,7 +42,7 @@ public class BouncePad extends Block implements SimpleWaterloggedBlock {
             Shapes.or(BOTTOM, TOP, Block.box(1, 8, 1, 5, 11, 5)), // North-west
     };
 
-    public BouncePad(Properties properties) {
+    public BouncePadBlock(Properties properties) {
         super(properties);
         registerDefaultState(stateDefinition.any().setValue(DIRECTION, 0).setValue(WATERLOGGED, Boolean.FALSE));
     }
@@ -87,36 +87,36 @@ public class BouncePad extends Block implements SimpleWaterloggedBlock {
     public void entityInside(BlockState state, Level level, BlockPos pos, Entity entity) {
         double moveX = 0;
         double moveZ = 0;
-        double speed = 0.25F;
+        double force = 0.25F;
         if (!entity.isCrouching()) {
             switch (state.getValue(DIRECTION)) {
                 default -> { // North
-                    moveZ -= speed;
+                    moveZ -= force;
                 }
                 case 1 -> { // North-east
-                    moveZ -= speed;
-                    moveX += speed;
+                    moveZ -= force;
+                    moveX += force;
                 }
                 case 2 -> { // East
-                    moveX += speed;
+                    moveX += force;
                 }
                 case 3 -> { // South-east
-                    moveZ += speed;
-                    moveX += speed;
+                    moveZ += force;
+                    moveX += force;
                 }
                 case 4 -> { // South
-                    moveZ += speed;
+                    moveZ += force;
                 }
                 case 5 -> { // South-west
-                    moveZ += speed;
-                    moveX -= speed;
+                    moveZ += force;
+                    moveX -= force;
                 }
                 case 6 -> { // West
-                    moveX -= speed;
+                    moveX -= force;
                 }
                 case 7 -> { // North-west
-                    moveZ -= speed;
-                    moveX -= speed;
+                    moveZ -= force;
+                    moveX -= force;
                 }
             }
             entity.push(moveX, 0.5F, moveZ);
@@ -130,6 +130,6 @@ public class BouncePad extends Block implements SimpleWaterloggedBlock {
             ++entity.yOld;
             entity.push(moveX, 0.5F, moveZ);
         }
-        entity.fallDistance = 0;
+        entity.resetFallDistance();
     }
 }
