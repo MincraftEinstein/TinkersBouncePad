@@ -11,9 +11,9 @@ import java.util.function.Supplier;
 public class ModInit {
 
     public static final Supplier<Block> BOUNCE_PAD = Services.REGISTRY.registerBlock("bounce_pad", () -> new BouncePadBlock(BlockBehaviour.Properties.of().mapColor(MapColor.GRASS).strength(0.3F).sound(SoundType.SLIME_BLOCK).isValidSpawn((state, getter, pos, entityType) -> false)));
-    public static final Supplier<Block> SKYSLIME_BOUNCE_PAD = Services.REGISTRY.registerBlock("skyslime_bounce_pad", () -> new BouncePadBlock(BlockBehaviour.Properties.copy(BOUNCE_PAD.get()).mapColor(MapColor.DIAMOND)));
-    public static final Supplier<Block> ENDERSLIME_BOUNCE_PAD = Services.REGISTRY.registerBlock("enderslime_bounce_pad", () -> new BouncePadBlock(BlockBehaviour.Properties.copy(BOUNCE_PAD.get()).mapColor(MapColor.COLOR_PURPLE)));
-    public static final Supplier<Block> ICHOR_BOUNCE_PAD = Services.REGISTRY.registerBlock("ichor_bounce_pad", () -> new BouncePadBlock(BlockBehaviour.Properties.copy(BOUNCE_PAD.get()).mapColor(MapColor.COLOR_ORANGE)));
+    public static final Supplier<Block> SKYSLIME_BOUNCE_PAD = Services.REGISTRY.registerBlock("skyslime_bounce_pad", () -> new BouncePadBlock(BlockBehaviour.Properties.ofFullCopy(BOUNCE_PAD.get()).mapColor(MapColor.DIAMOND)));
+    public static final Supplier<Block> ENDERSLIME_BOUNCE_PAD = Services.REGISTRY.registerBlock("enderslime_bounce_pad", () -> new BouncePadBlock(BlockBehaviour.Properties.ofFullCopy(BOUNCE_PAD.get()).mapColor(MapColor.COLOR_PURPLE)));
+    public static final Supplier<Block> ICHOR_BOUNCE_PAD = Services.REGISTRY.registerBlock("ichor_bounce_pad", () -> new BouncePadBlock(BlockBehaviour.Properties.ofFullCopy(BOUNCE_PAD.get()).mapColor(MapColor.COLOR_ORANGE)));
 
     public static void init() {
     }

@@ -1,5 +1,5 @@
 modLoader = "javafml"
-loaderVersion = "${forge_loader_version_range}"
+loaderVersion = "${neoforge_loader_version_range}"
 license = "All rights reserved"
 issueTrackerURL = "https://github.com/MincraftEinstein/TinkersBouncePad/issues"
 
@@ -13,16 +13,19 @@ issueTrackerURL = "https://github.com/MincraftEinstein/TinkersBouncePad/issues"
     authors = "${mod_author}"
     description = "${description}"
 
+[[accessTransformers]]
+    file = "META-INF/accesstransformer.cfg"
+
 [[dependencies.tbouncepad]]
-    modId = "forge"
-    mandatory = true
-    versionRange = "[${forge_version},)"
+    modId = "neoforge"
+    type = "required"
+    versionRange = "[${neoforge_version},)"
     ordering = "NONE"
-    side = "BOTH"
+    side = "SERVER"
 
 [[dependencies.tbouncepad]]
     modId = "minecraft"
-    mandatory = true
+    type = "required"
     versionRange = "${minecraft_version_range}"
     ordering = "NONE"
-    side = "BOTH"
+    side = "SERVER"

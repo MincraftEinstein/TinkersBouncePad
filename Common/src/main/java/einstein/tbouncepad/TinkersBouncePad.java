@@ -24,6 +24,6 @@ public class TinkersBouncePad {
     }
 
     public static ResourceLocation loc(String str) {
-        return new ResourceLocation(MOD_ID, str);
+        return ResourceLocation.fromNamespaceAndPath(MOD_ID, str);
     }
 }
