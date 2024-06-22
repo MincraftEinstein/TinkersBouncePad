@@ -2,13 +2,13 @@
   "schemaVersion": 1,
   "id": "tbouncepad",
   "version": "${version}",
-  "name": "Tinkers' Bounce Pad",
+  "name": "${mod_name}",
   "description": "This mod adds an updated version of the Bounce Pad from Tinkers' Construct 1.6.4",
   "authors": [
     "MincraftEinstein"
   ],
   "contact": {
-    "homepage": "https://www.curseforge.com/minecraft/mc-mods/tinkers-bounce-pad-fabric",
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/tinkers-bounce-pad",
     "sources": "https://github.com/MincraftEinstein/TinkersBouncePad",
     "issues": "https://github.com/MincraftEinstein/TinkersBouncePad/issues"
   },
@@ -22,9 +22,19 @@
   },
   "accessWidener": "tbouncepad.accesswidener",
   "depends": {
-    "fabricloader": ">=0.14",
+    "fabricloader": ">=${fabric_version}",
     "fabric": "*",
-    "minecraft": ">=1.20",
-    "java": ">=17"
+    "minecraft": ">=${minecraft_version}",
+    "java": ">=${java_version}"
+  },
+  "custom": {
+    "modmenu": {
+      "links": {
+        "modmenu.modrinth": "https://modrinth.com/mod/tinkers-bounce-pad",
+        "modmenu.curseforge": "https://curseforge.com/minecraft/mc-mods/tinkers-bounce-pad",
+        "modmenu.discord": "https://discord.gg/gSsaFAvrBM",
+        "modmenu.kofi": "https://ko-fi.com/mincrafteinstein"
+      }
+    }
   }
 }
