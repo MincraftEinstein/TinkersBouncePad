@@ -13,9 +13,6 @@ issueTrackerURL = "https://github.com/MincraftEinstein/TinkersBouncePad/issues"
     authors = "${mod_author}"
     description = "${description}"
 
-[[accessTransformers]]
-    file = "META-INF/accesstransformer.cfg"
-
 [[dependencies.tbouncepad]]
     modId = "neoforge"
     type = "required"

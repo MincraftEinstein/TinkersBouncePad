@@ -20,8 +20,6 @@ dependencies {
 }
 
 loom {
-    accessWidenerPath.set(project(":common").file("src/main/resources/${mod_id}.accesswidener"))
-
     runs {
         client {
             client()

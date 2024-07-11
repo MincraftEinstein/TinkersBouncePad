@@ -20,7 +20,6 @@
       "einstein.tbouncepad.TinkersBouncePadFabric"
     ]
   },
-  "accessWidener": "tbouncepad.accesswidener",
   "depends": {
     "fabricloader": ">=${fabric_version}",
     "fabric": "*",
