@@ -16,9 +16,12 @@ public class NeoForgeRegistryHelper implements RegistryHelper {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.createBlocks(MOD_ID);
 
     @Override
-    public <T extends Block> Supplier<T> registerBlock(String name, Supplier<T> type) {
-        Supplier<T> block = BLOCKS.register(name, type);
-        ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
-        return block;
+    public <T extends Block> Supplier<T> registerBlock(String name, Supplier<T> block) {
+        return BLOCKS.register(name, block);
+    }
+
+    @Override
+    public <T extends Item> Supplier<T> registerItem(String name, Supplier<T> item) {
+        return ITEMS.register(name, item);
     }
 }

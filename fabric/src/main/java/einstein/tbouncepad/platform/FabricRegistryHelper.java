@@ -13,9 +13,14 @@ import java.util.function.Supplier;
 public class FabricRegistryHelper implements RegistryHelper {
 
     @Override
-    public <T extends Block> Supplier<T> registerBlock(String name, Supplier<T> type) {
-        T block = Registry.register(BuiltInRegistries.BLOCK, TinkersBouncePad.loc(name), type.get());
-        Registry.register(BuiltInRegistries.ITEM, TinkersBouncePad.loc(name), new BlockItem(block, new Item.Properties()));
-        return () -> block;
+    public <T extends Block> Supplier<T> registerBlock(String name, Supplier<T> block) {
+        T instance = Registry.register(BuiltInRegistries.BLOCK, TinkersBouncePad.loc(name), block.get());
+        return () -> instance;
+    }
+
+    @Override
+    public <T extends Item> Supplier<T> registerItem(String name, Supplier<T> item) {
+        T instance = Registry.register(BuiltInRegistries.ITEM, TinkersBouncePad.loc(name), item.get());
+        return () -> instance;
     }
 }

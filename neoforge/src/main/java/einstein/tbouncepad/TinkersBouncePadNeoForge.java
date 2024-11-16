@@ -1,12 +1,11 @@
 package einstein.tbouncepad;
 
+import einstein.tbouncepad.init.ModInit;
 import einstein.tbouncepad.platform.NeoForgeRegistryHelper;
 import einstein.tbouncepad.platform.Services;
-import fuzs.forgeconfigapiport.neoforge.api.forge.v4.ForgeConfigRegistry;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;
-import net.neoforged.fml.config.ModConfig;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 
 @Mod(TinkersBouncePad.MOD_ID)
@@ -17,7 +16,6 @@ public class TinkersBouncePadNeoForge {
         NeoForgeRegistryHelper.ITEMS.register(eventBus);
         NeoForgeRegistryHelper.BLOCKS.register(eventBus);
         eventBus.addListener(this::onBuildContents);
-        ForgeConfigRegistry.INSTANCE.register(ModConfig.Type.CLIENT, TinkersBouncePad.buildConfigs());
     }
 
     void onBuildContents(BuildCreativeModeTabContentsEvent event) {

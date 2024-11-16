@@ -90,9 +90,6 @@ public class BouncePadBlock extends Block implements SimpleWaterloggedBlock {
         double force = 0.25F;
         if (!entity.isCrouching()) {
             switch (state.getValue(DIRECTION)) {
-                default -> { // North
-                    moveZ -= force;
-                }
                 case 1 -> { // North-east
                     moveZ -= force;
                     moveX += force;
@@ -118,10 +115,13 @@ public class BouncePadBlock extends Block implements SimpleWaterloggedBlock {
                     moveZ -= force;
                     moveX -= force;
                 }
+                default -> { // North
+                    moveZ -= force;
+                }
             }
             entity.push(moveX, 0.5F, moveZ);
 
-            if (TinkersBouncePad.BOUNCE_SOUND.get()) {
+            if (TinkersBouncePad.CONFIGS.bounceSound) {
                 level.playLocalSound(pos.getX() + 0.5F, pos.getY() + 0.5F, pos.getZ() + 0.5F, soundType.getStepSound(), SoundSource.BLOCKS, soundType.getVolume() / 2, soundType.getPitch() * 0.65F, false);
             }
         }
