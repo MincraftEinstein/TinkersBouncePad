@@ -1,3 +1,9 @@
 {
-	"block.tbouncepad.bounce_pad": "Прыжоковая подушка"
+  "block.tbouncepad.bounce_pad": "Упругая подушка",
+  "block.tbouncepad.skyslime_bounce_pad": "Упругая подушка из небесной слизи",
+  "block.tbouncepad.enderslime_bounce_pad": "Упругая подушка из эндер-слизи",
+  "block.tbouncepad.ichor_bounce_pad": "Ихоровая упругая подушка",
+  "config.tbouncepad": "Настройки Tinkers' Bounce Pad",
+  "config.tbouncepad.bounceSound": "Звук упругого отскока",
+  "config.tbouncepad.bounceSound.desc": "Если значение установлено на §qtrue§r, то при отскоке сущности на упругой подушке будет воспроизводиться звук слизи."
 }
